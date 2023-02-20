@@ -1,5 +1,6 @@
 // 1480. Running Sum of 1D Array 
 // https://leetcode.com/problems/running-sum-of-1d-array/
+// https://leetcode.com/explore/featured/card/the-leetcode-beginners-guide/692/challenge-problems/4422/
 
 // Example:
     // input: nums = [3,1,2,10,1]
