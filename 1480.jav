@@ -25,3 +25,16 @@ class Solution {
     // space complexity = O(1). 
     // space complexity is constant because, aside from our input and output arrays, we do not create a data structure proportionnal in size to our input.
 }
+
+// Alternative solution - Overwritten Input Approach
+class Solution2 {
+    public [int] runningSum(int[] nums) {
+        // this time, no need to initialize a new array
+        
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = nums[i] + nums[i - 1];       
+        }
+        
+        return results;
+    }
+}
