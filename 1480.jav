@@ -30,11 +30,11 @@ class Solution {
 class Solution2 {
     public [int] runningSum(int[] nums) {
         // this time, no need to initialize a new array
-        
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = nums[i] + nums[i - 1];       
+        // The first element is already the correct value
+        for (int i = 1; i < nums.length; i++) {
+            nums[i] = nums[i] + nums[i - 1]; // nums[i] += nums[i-1]       
         }
         
-        return results;
+        return nums;
     }
 }
