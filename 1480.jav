@@ -1,12 +1,16 @@
-// 1480. Running Sum of 1D Array - https://leetcode.com/explore/featured/card/the-leetcode-beginners-guide/692/challenge-problems/4422/
+// Problem #1480 - Running Sum of 1D Array 
 
-// input parameter is an array of integers
-// output is also an array of integers 
-// both arrays have the same length
+// Given an array nums, we define a running sum of an array as runningSum[i] = sum(nums[0]...nums[i])
+// Constraints: 
+    // The number of nodes in the list is in the range [1, 1000]
+    // The value of each element in the array is in the range [-10^6, 10^6]
+// Example:
+    // input: nums = [3,1,2,10,1]
+    // output: results = [3,4,6,16,17]
 
 class Solution {
     public [int] runningSum(int[] nums){
-        int[] results = new int[nums.length]; 
-        result[0] = nums[0];
+        int[] results = new int[nums.length]; // makes an array the same size as our input array
+        results[0] = nums[0];
     }
 }
