@@ -1,4 +1,4 @@
-// Problem #1480 - Running Sum of 1D Array 
+// 1480. Running Sum of 1D Array 
 // https://leetcode.com/explore/featured/card/the-leetcode-beginners-guide/692/challenge-problems/4422/
 
 // Given an array nums, we define a running sum of an array as runningSum[i] = sum(nums[0]...nums[i])
