@@ -24,7 +24,7 @@ class Solution {
 }
 
 // Alternative solution - Overwritten Input Approach
-class Solution2 {
+class Solution {
     public int[] runningSum(int[] nums) {
         // this time, no need to initialize a new array
         // The first element is already the correct value
