@@ -34,7 +34,7 @@ class Solution {
 
 """
 Explanation:
-First, we create our return list. 
+Firstly, we create our return list. 
 We initialize it with a capacity of n items, which is not necessary, as array lists resize automatically when you add elements to them.
 Then we iterate through the list and check divisibility of each element, starting with the combined condition.
 The add() method appends the current element to the end of the list, which is the right place for any current element, as we are 
@@ -43,6 +43,33 @@ Lastly, we return the answer array once our loop finishes.
 """
   
   
-// Alternative - String Concatenation Approach
-// 4:16
-
+// Alternative - String Concatenation Approach - 4:16
+  
+class Solution {
+    public List<String> fizzBuzz(int n) {
+        List<String> answer = new ArrayList<>(n);
+      
+        for (int i = 1; i <= n; i++) {
+            boolean divisibleBy3 = i % 3 == 0;
+            boolean divisibleBy5 = i % 5 == 0;
+            
+            String currStr = ""; 
+          
+            if (divisibleBy3) {
+                currStr += "Fizz";
+            }
+            
+            if (divisibleBy5) {
+                currStr += "Buzz";
+            }
+          
+            if (currStr.isEmpty()) { // if not divisible by 3 or 5
+                currStr += String.valueOf(i); 
+            }
+          
+            answer.add(currStr);
+        }
+        
+        return answer;
+    }
+}
