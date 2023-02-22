@@ -10,11 +10,10 @@ class Solution {
       
         while (num > 0) {
           if (num % 2 == 0){
-            n = n/2;
+            num /= 2;
             steps += 1;
-          }
-          else {
-            n -= 1;
+          } else {
+            num--;
             steps += 1;
           }
         }
