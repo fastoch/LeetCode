@@ -7,7 +7,7 @@
     // output: results = [3,4,6,16,17]
 
 class Solution {
-    public [int] runningSum(int[] nums) {
+    public int[] runningSum(int[] nums) {
         int[] results = new int[nums.length]; // makes an array the same size as our input array
         results[0] = nums[0]; // both input and output arrays will have the same first value
         
@@ -25,7 +25,7 @@ class Solution {
 
 // Alternative solution - Overwritten Input Approach
 class Solution2 {
-    public [int] runningSum(int[] nums) {
+    public int[] runningSum(int[] nums) {
         // this time, no need to initialize a new array
         // The first element is already the correct value
         for (int i = 1; i < nums.length; i++) {
