@@ -13,11 +13,19 @@
 class Solution {
     public int maximumWealth(int[][] accounts) {
         int maxWealthSoFar = 0;
+        
         // iterate through each customer in accounts
-        for (int[] customer : accounts) { 
-            int[] currentCustomerWealth = 0;                
+        for (int[] customer : accounts) { // int[] because accounts is an array of integer arrays
+            int[] currentCustomerWealth = 0;  
+            
+            // iterate through all the banks the customer has money in
+            for (int bank : customer) { // int because customer is an array of integers
+                currentCustomerWealth += bank;
             }
+            
+            maxWealthSoFar = Math.max(maxWealthSoFar, currentCustomerWealth);
         }
-        return 
+        
+        return maxWealthSoFar;
     }
 }
