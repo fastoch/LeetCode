@@ -21,3 +21,6 @@ class Solution {
         return steps;
     }
 }
+
+// Alternative approach - Bitwise operations
+
