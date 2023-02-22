@@ -17,7 +17,7 @@ class Solution {
             boolean divisibleBy3 = i % 3 == 0;
             boolean divisibleBy5 = i % 5 == 0;
             
-            if (divisibleBy3 && disibleBy5) {
+            if (divisibleBy3 && divisibleBy5) {
                 answer.add("FizzBuzz");
             } else if (divisibleBy3) {
                 answer.add("Fizz");
