@@ -11,11 +11,10 @@ class Solution {
         while (num > 0) {
           if (num % 2 == 0){
             num /= 2;
-            steps += 1;
           } else {
             num--;
-            steps += 1;
           }
+          steps++;
         }
         return steps;
     }
