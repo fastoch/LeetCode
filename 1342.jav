@@ -22,6 +22,7 @@ class Solution {
 
 
 // Alternative - Bitwise Approach - 4:25
+// Evernote: Programming > LeetCode > Problem #1342
 """
 This approach uses slightly more advanced concepts:
   - Binary representation of integers
