@@ -18,8 +18,9 @@ If there are two middle nodes, return the second middle node.
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+  
 class Solution {
     public ListNode middleNode(ListNode head) {
-        
+        // TODO
     }
 }
