@@ -36,8 +36,10 @@ class Solution {
         int steps = 0;
       
         while (num > 0) {
-          if (num % 2 == 0){
-            num /= 2;
+          // Before, we used num % 2
+          if ((num & 1) == 0){
+            // Before, we used num /= 2
+            num >>= 1; // returns all of num's bits shifted right by 1, which is equivalent to dividing by two
           } else {
             num--;
           }
@@ -46,3 +48,5 @@ class Solution {
         return steps;
     }
 }
+
+// 9:32
