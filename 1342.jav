@@ -1,4 +1,5 @@
 // 1342. Number of Steps to Reduce a Number to Zero
+// https://leetcode.com/explore/learn/card/the-leetcode-beginners-guide/692/challenge-problems/4425/
 """
 Given an integer num, return the number of steps to reduce it to zero.
 In one step, if the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
@@ -47,6 +48,6 @@ class Solution {
         }
         return steps;
     }
+    // time complexity = O(logn), as the number of steps we take depends on the amount of times we halve the value of our input
+    // space complexity = O(1), as we are not creating any data structures proportional in size to our input
 }
-
-// 9:32
