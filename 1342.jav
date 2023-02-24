@@ -20,5 +20,28 @@ class Solution {
     }
 }
 
-// Alternative approach - Bitwise operations - 4:00
 
+// Alternative - Bitwise Approach - 4:25
+"""
+This approach uses slightly more advanced concepts:
+  - Binary representation of integers
+  - Bitwise Shift Operators
+  - Bitwise Logical Operators
+  - Bitmasks
+"""  
+  
+class Solution {
+    public int numberOfSteps(int num) {
+        int steps = 0;
+      
+        while (num > 0) {
+          if (num % 2 == 0){
+            num /= 2;
+          } else {
+            num--;
+          }
+          steps++;
+        }
+        return steps;
+    }
+}
