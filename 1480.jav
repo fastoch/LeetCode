@@ -2,6 +2,11 @@
 // https://leetcode.com/problems/running-sum-of-1d-array/
 // https://leetcode.com/explore/featured/card/the-leetcode-beginners-guide/692/challenge-problems/4422/
 
+"""
+Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
+Return the running sum of nums.
+"""
+
 // Example:
     // input: nums = [3,1,2,10,1]
     // output: results = [3,4,6,16,17]
@@ -19,7 +24,7 @@ class Solution {
     }
     
     // time complexity = O(n), as we go over every element in our input.
-    // space complexity = O(1). 
+    // space complexity = O(1)
     // space complexity is constant because, aside from our input and output arrays, we do not create a data structure proportionnal in size to our input.
 }
 
